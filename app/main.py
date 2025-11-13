@@ -201,27 +201,20 @@ else:
     st.warning("⚠️ Please select at least one country from the sidebar")
 
 # Insights section
-
 st.markdown("---")
-st.markdown("### 💡 Key Insights from The Analysis")
-st.markdown("""
-<div style="background: #f0f8ff; padding: 20px; border-radius: 10px; border-left: 5px solid #4ECDC4;">
-<h4 style="margin-top:0;">🌞 Solar Potential Ranking:</h4>
-<ul>
-<li><b>🥇 Benin (236.2 W/m²)</b> - Highest solar potential, ideal for large-scale projects</li>
-<li><b>🥈 Togo (223.9 W/m²)</b> - Strong alternative with consistent radiation</li>
-<li><b>🥉 Sierra Leone (185.0 W/m²)</b> - Good potential with higher humidity influence</li>
-</ul>
+st.markdown("### 💡 Key Insights from Your Analysis")
 
-<h4>📊 Statistical Significance:</h4>
-<ul>
-<li>ANOVA test confirmed significant differences (p < 0.0001)</li>
-<li>Benin is <b>27.7% better</b> than Sierra Leone for solar energy</li>
-<li>Strong GHI-Temperature correlation observed across all countries</li>
-</ul>
-</div>
-""", unsafe_allow_html=True)
+st.info("""
+**🌞 Solar Potential Ranking:**
+- 🥇 **Benin (236.2 W/m²)** - Highest solar potential, ideal for large-scale projects
+- 🥈 **Togo (223.9 W/m²)** - Strong alternative with consistent radiation  
+- 🥉 **Sierra Leone (185.0 W/m²)** - Good potential with higher humidity influence
 
+**📊 Statistical Significance:**
+- ANOVA test confirmed significant differences (p < 0.0001)
+- Benin is **27.7% better** than Sierra Leone for solar energy
+- Strong GHI-Temperature correlation observed across all countries
+""")
 # Footer
 st.markdown("---")
 st.markdown("<div style='text-align: center; color: #666;'>☀️ Solar Data Analysis Dashboard • Built with Streamlit</div>", unsafe_allow_html=True)
