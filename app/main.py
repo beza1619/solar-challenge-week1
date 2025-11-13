@@ -202,7 +202,7 @@ else:
 
 # Insights section
 st.markdown("---")
-st.markdown("### 💡 Key Insights from Your Analysis")
+st.markdown("### 💡 Key Insights from The Analysis")
 
 st.info("""
 **🌞 Solar Potential Ranking:**
